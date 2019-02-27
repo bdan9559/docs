@@ -519,13 +519,19 @@ If you want to track an event that isn't a predefined event, simply do the follo
 - *Swift*
 
     ```swift
-    BranchEvent.customEventWithName("User_Scanned_Item").logEvent()
+    let event = BranchEvent.customEvent(withName: “User_Scanned_Item”)
+	event.customData[“Custom_Event_Property_Key1”] = “Custom_Event_Property_val1"
+	event.customData[“Custom_Event_Property_Key2”] = “Custom_Event_Property_val2"
+	event.logEvent()
     ```
 
 - *Objective-C*
 
     ```obj-c
-    [[BranchEvent customEventWithName:@"User_Scanned_Item"] logEvent];
+    BranchEvent *event = [BranchEvent customEventWithName:@"User_Scanned_Item"]];
+    event.customData[@“Custom_Event_Property_Key1”] = @“Custom_Event_Property_val1";
+    event.customData[@“Custom_Event_Property_Key2”] = @“Custom_Event_Property_val2";
+	[event logEvent];
     ```
 
 ### Android
