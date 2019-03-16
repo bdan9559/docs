@@ -96,6 +96,6 @@ The Universal Link Validator compares an app’s local project settings to its d
 	 Click the link generated to test your configuration
 	#####################################################
 	{"url":"https://ulv.app.link/RPyaHjpYJd"}
-	```
+	```danielbrownk31
 
 1. Clicking the generated link, or copying & pasting it into a browser, will open the validator and display the test results.
